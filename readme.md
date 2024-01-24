@@ -1,21 +1,19 @@
-# Nome del Tuo Progetto
+# SQL
 
-Breve descrizione del progetto.
+Breve guida su SQL
 
 ## Descrizione
 
-Inserisci una descrizione più dettagliata del tuo progetto. Spiega il suo scopo, le sue funzionalità principali e come può essere utilizzato.
-
-## Requisiti del Sistema
-
-Specifica i requisiti del sistema per eseguire il tuo progetto. Ad esempio, le dipendenze, le versioni di PHP, librerie esterne, ecc.
-
-## Installazione
-
-Fornisci istruzioni dettagliate su come installare e configurare il tuo progetto. Assicurati di includere tutti i passaggi necessari, come l'installazione delle dipendenze e la configurazione del database.
+Crea una tabella in SQL di una Persona
 
 ```bash
-# Esempio di comandi per l'installazione
-git clone https://github.com/tuonome/tuoprogetto.git
-cd tuoprogetto
-composer install
+# Esempio
+CREATE TABLE Persona (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(50) NOT NULL,
+    cognome VARCHAR(50) NOT NULL,
+    data_di_nascita DATE,
+    indirizzo VARCHAR(100),
+    email VARCHAR(100) UNIQUE,
+    telefono VARCHAR(20)
+);
